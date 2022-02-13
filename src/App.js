@@ -29,8 +29,18 @@ function App() {
   const { account } = useMoralisSolanaApi();
   const { fetch, data, isLoading } = useMoralisSolanaCall(account.getPortfolio);
 
+  /**
+   * @description the function handles authentication with phantom wallet
+   */
+  const onConnectPhantomWallet = async () => {
+    await authenticate({
+      type: "sol",
+    });
+  };
+
   useEffect(() => {
     if (isAuthenticated && user.get("solAddress")) {
+      // Fetch only when authenticated
       fetch({
         params: {
           address: user.get("solAddress"),
@@ -125,7 +135,7 @@ function App() {
             <>
               <h1>Solana DeFi Dashboard</h1>
               <Button
-                onClick={() => authenticate({ type: "sol" })}
+                onClick={onConnectPhantomWallet}
                 isLoading={isAuthenticating}
                 loadingText="Authenticating..."
                 text="Connect Wallet"
