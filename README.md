@@ -1,70 +1,41 @@
-# Getting Started with Create React App
+# `Solana DeFi Dashboard Tutorial`
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This Project is a utilize [`moralis`](https://github.com/MoralisWeb3/Moralis-JS-SDK) and [`web3uikit`](https://github.com/web3ui/web3uikit) to demostrates how to build a simple Solana DeFi Dashboard App. This project works on both Solana Mainnet Beta and Devnet.
 
-## Available Scripts
+![dapp3](https://github.com/YosephKS/moralis-upgradeable-smart-contracts/blob/main/moralis-upgradeable-smart-contract.gif)
 
-In the project directory, you can run:
+# ⭐️ `Star us`
 
-### `yarn start`
+If this tutorial helps you to build Solana dApps - please star this project, every star makes us very happy!
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+# 🤝 How to get help
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+If you have any questions or need help running this project please don't hesitate to ask in our [forum](https://forum.moralis.io/t/solana-spl-token-introduction-tutorial/9568). We are monitoring it 24/7 and are here to help you get up to speed.
 
-### `yarn test`
+# 🚀 Quick Start
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+📄 Clone or fork `solana-defi-dashboard`:
 
-### `yarn build`
+```sh
+git clone https://github.com/YosephKS/solana-defi-dashboard.git
+```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+💿 Install all dependencies:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+```sh
+cd moralis-upgradeable-smart-contracts
+yarn install
+```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+✏ Rename `.env.example` to `.env` in the main folder and provide your `appId` and `serverUrl` from Moralis ([How to start Moralis Server](https://docs.moralis.io/moralis-server/getting-started/create-a-moralis-server)), plus some other Biconomy API Keys:
 
-### `yarn eject`
+```jsx
+REACT_APP_MORALIS_APPLICATION_ID = xxx;
+REACT_APP_MORALIS_SERVER_URL = xxx;
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+🚴‍♂️ Run your App:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+```sh
+yarn start
+```
